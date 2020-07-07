@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>SoSpri-the-page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/pr_bbw.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $("#includedHeader").load("/fragments/header.html");
+            $("#includedFooter").load("/fragments/footer.html");
+        });
+    </script>
+</head>
+
+<body>
+<div id="includedHeader"></div>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div>
+                    <h4 style="margin-top: 30px">Add Channel</h4>
+                    <div class="row">
+                        <div class=" col-lg-8 col-lg-offset-2">
+                            <form id="register-form" method="post" th:action="@{/channels}" th:object="${channel}">
+                                <div class="controls">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_name">Name *</label>
+                                                <input id="form_name"
+                                                       type="text"
+                                                       name="name"
+                                                       class="form-control"
+                                                       placeholder="Please enter your firstname *"
+                                                       data-error="Firstname is required."
+                                                       th:field="*{name}"
+                                                       required
+                                                >
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <div th:each="roleValue : ${T(ch.bbw.pr.sospri.security.Role).values()}"
+                                                     class="custom-control custom-checkbox">
+                                                    <input type="checkbox" name="roles" class="custom-control-input"
+                                                           th:value="${roleValue}"
+                                                           th:id="${roleValue}"
+                                                           th:field="*{roles}">
+                                                    <label class="custom-control-label"
+                                                           th:for="${roleValue}"
+                                                           th:text="${roleValue}"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-success">Create</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div style="height: 200px"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="includedFooter"></div>
+</body>
+
+</html>

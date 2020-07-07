@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "google.recaptcha.key",
+      "type": "ch.bbw.pr.sospri.config.CaptchaSettings",
+      "sourceType": "ch.bbw.pr.sospri.config.CaptchaSettings"
+    }
+  ],
+  "properties": [
+    {
+      "name": "google.recaptcha.key.secret",
+      "type": "java.lang.String",
+      "sourceType": "ch.bbw.pr.sospri.config.CaptchaSettings"
+    },
+    {
+      "name": "google.recaptcha.key.site",
+      "type": "java.lang.String",
+      "sourceType": "ch.bbw.pr.sospri.config.CaptchaSettings"
+    }
+  ],
+  "hints": []
+}

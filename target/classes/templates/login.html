@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>SoSpri-the-page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/pr_bbw.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $("#includedHeader").load("fragments/header.html");
+            $("#includedFooter").load("fragments/footer.html");
+        });
+    </script>
+    <meta name="google-signin-client_id" content="941832897112-4h5r9fscdpjelp03ko0sd7au6dtsnktb.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <style>
+        .container {
+            padding: 30px;
+            background-color: white;
+            position: fixed;
+            top: 100px;
+            max-width: 400px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 2px;
+        }
+
+        input {
+            width: 100%;
+        }
+
+        .button-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-top: 20px
+
+        ;
+        }
+    </style>
+</head>
+
+<body>
+<script>
+    function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+    }
+</script>
+
+<div class="container">
+    <form name="f" th:action="@{/login}" method="post">
+        <fieldset>
+            <legend>Please Login</legend>
+            <div th:if="${param.error}" class="alert alert-error">
+                Invalid username and password.
+            </div>
+            <div th:if="${param.logout}" class="alert alert-success">
+                You have been logged out.
+            </div>
+            <div class="">
+                <label for="username">Username</label><br/>
+                <input type="text" id="username" name="username"/>
+            </div>
+            <div class="" style="margin-bottom: 20px">
+                <label for="password">Password</label><br/>
+                <input type="password" id="password" name="password"/>
+            </div>
+
+            <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+
+            <div class="button-bar">
+                <a href="/register">Create a new Account</a>
+                <button type="submit" class="btn btn-success">Login</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+</div>
+</body>
+</html>
+
+
+<!--<html xmlns:th="http://www.thymeleaf.org" lang="en" xmlns:tiles="http://www.thymeleaf.org">-->
+<!--<body>-->
+<!--<div class="container">-->
+<!--    <form name="f" th:action="@{/login}" method="post">-->
+<!--        <fieldset>-->
+<!--            <legend>Please Login</legend>-->
+<!--            <div th:if="${param.error}" class="alert alert-error">-->
+<!--                Invalid username and password.-->
+<!--            </div>-->
+<!--            <div th:if="${param.logout}" class="alert alert-success">-->
+<!--                You have been logged out.-->
+<!--            </div>-->
+<!--            <div class="form-group">-->
+<!--                <label for="username">Username</label>-->
+<!--                <input type="text" id="username" name="username"/>-->
+<!--            </div>-->
+<!--            <div class="form-group">-->
+<!--                <label for="password">Password</label>-->
+<!--                <input type="password" id="password" name="password"/>-->
+<!--            </div>-->
+<!--            <button type="submit" class="btn btn-primary">Login</button>-->
+<!--        </fieldset>-->
+<!--    </form>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
