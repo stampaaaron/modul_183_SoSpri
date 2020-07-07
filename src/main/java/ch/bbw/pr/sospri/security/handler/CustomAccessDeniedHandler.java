@@ -25,9 +25,11 @@ public class CustomAccessDeniedHandler implements AccessDeniedHandler {
 
     Authentication auth
         = SecurityContextHolder.getContext().getAuthentication();
-    User user = (User) auth.getPrincipal();
-    if (auth != null) {
-      log.warn("user with id = {} tried to access page {}", user.getId(), request.getRequestURL());
+    Object user = auth.getPrincipal();
+    if (user instanceof User) {
+      log.warn("user with id = {} tried to access page {}", ((User) user).getId(), request.getRequestURL());
+    } else {
+      log.warn("a google user tried to access page {}", request.getRequestURL());
     }
 
     response.sendRedirect(request.getContextPath() + "/403.html");

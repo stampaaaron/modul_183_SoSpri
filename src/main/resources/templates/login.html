@@ -16,8 +16,6 @@
             $("#includedFooter").load("fragments/footer.html");
         });
     </script>
-    <meta name="google-signin-client_id" content="941832897112-4h5r9fscdpjelp03ko0sd7au6dtsnktb.apps.googleusercontent.com">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
 
     <style>
         .container {
@@ -30,6 +28,7 @@
             transform: translateX(-50%);
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
             border-radius: 2px;
+            text-align: center;
         }
 
         input {
@@ -40,35 +39,41 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
-            margin-top: 20px
+            margin-top: 20px;
+        }
 
-        ;
+        .or-label {
+            text-align: center;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            margin-top: 15px;
+        }
+
+        .google-login {
+            display: inline-block;
+            width: 100%;
+            background-color: #fa6138;
+            font-weight: bold;
+            color: white !important;
+            margin-top: 20px;
+        }
+
+        .google-login:hover {
+            background-color: #dd5230;
         }
     </style>
 </head>
 
 <body>
-<script>
-    function onSignIn(googleUser) {
-        // Useful data for your client-side scripts:
-        var profile = googleUser.getBasicProfile();
-        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-        console.log('Full Name: ' + profile.getName());
-        console.log('Given Name: ' + profile.getGivenName());
-        console.log('Family Name: ' + profile.getFamilyName());
-        console.log("Image URL: " + profile.getImageUrl());
-        console.log("Email: " + profile.getEmail());
-
-        // The ID token you need to pass to your backend:
-        var id_token = googleUser.getAuthResponse().id_token;
-        console.log("ID Token: " + id_token);
-    }
-</script>
-
 <div class="container">
     <form name="f" th:action="@{/login}" method="post">
         <fieldset>
             <legend>Please Login</legend>
+
+            <a class="btn google-login" href="http://localhost:8080/oauth2/authorization/google">Login with google</a>
+
+            <p class="or-label">Or</p>
+
             <div th:if="${param.error}" class="alert alert-error">
                 Invalid username and password.
             </div>
@@ -84,8 +89,6 @@
                 <input type="password" id="password" name="password"/>
             </div>
 
-            <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
-
             <div class="button-bar">
                 <a href="/register">Create a new Account</a>
                 <button type="submit" class="btn btn-success">Login</button>
@@ -93,34 +96,5 @@
         </fieldset>
     </form>
 </div>
-</div>
 </body>
 </html>
-
-
-<!--<html xmlns:th="http://www.thymeleaf.org" lang="en" xmlns:tiles="http://www.thymeleaf.org">-->
-<!--<body>-->
-<!--<div class="container">-->
-<!--    <form name="f" th:action="@{/login}" method="post">-->
-<!--        <fieldset>-->
-<!--            <legend>Please Login</legend>-->
-<!--            <div th:if="${param.error}" class="alert alert-error">-->
-<!--                Invalid username and password.-->
-<!--            </div>-->
-<!--            <div th:if="${param.logout}" class="alert alert-success">-->
-<!--                You have been logged out.-->
-<!--            </div>-->
-<!--            <div class="form-group">-->
-<!--                <label for="username">Username</label>-->
-<!--                <input type="text" id="username" name="username"/>-->
-<!--            </div>-->
-<!--            <div class="form-group">-->
-<!--                <label for="password">Password</label>-->
-<!--                <input type="password" id="password" name="password"/>-->
-<!--            </div>-->
-<!--            <button type="submit" class="btn btn-primary">Login</button>-->
-<!--        </fieldset>-->
-<!--    </form>-->
-<!--</div>-->
-<!--</body>-->
-<!--</html>-->

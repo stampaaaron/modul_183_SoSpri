@@ -42,17 +42,21 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         .antMatchers("/h2-console/**").permitAll()
         .antMatchers("/register").permitAll()
         .antMatchers("/login").permitAll()
+
         .antMatchers("/members").hasAuthority(Role.ADMIN.name())
         .antMatchers("/channels/add").hasAnyAuthority(Role.ADMIN.name(), Role.SUPERVISOR.name())
+
         .anyRequest().authenticated()
+
         .and().exceptionHandling().accessDeniedHandler(accessDeniedHandler)
+
         .and().formLogin().loginPage("/login").permitAll()
+        .failureHandler(loginFailureHandler)
+        .successHandler(loginSuccessHandler)
         .and().oauth2Login().loginPage("/login")
         .failureHandler(loginFailureHandler)
         .successHandler(loginSuccessHandler)
-        .and().logout()
-        .logoutUrl("/logout")
-        .permitAll().logoutSuccessHandler(logoutSuccessHandler);
+        .and().logout().logoutUrl("/logout").permitAll().logoutSuccessHandler(logoutSuccessHandler);
 
     http.csrf().ignoringAntMatchers("/h2-console/**")
         .and().headers().frameOptions().sameOrigin();

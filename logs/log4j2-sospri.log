@@ -1696,3 +1696,949 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2020-07-07 13:58:47.758  WARN mb1066 --- [  restartedMain] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
 2020-07-07 13:58:47.758  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
 2020-07-07 13:58:47.762  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-07-07 19:48:51.478  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Starting Application on mb1066 with PID 13900 (/Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage/target/classes started by astampa in /Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage)
+2020-07-07 19:48:51.486 DEBUG mb1066 --- [  restartedMain] c.b.p.s.Application                      : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-07-07 19:48:51.487  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : No active profile set, falling back to default profiles: default
+2020-07-07 19:48:51.525  INFO mb1066 --- [  restartedMain] o.s.b.d.r.ChangeableUrls                 : The Class-Path manifest attribute in /Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-07-07 19:48:51.525  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-07 19:48:51.526  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-07 19:48:52.253  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-07-07 19:48:52.303  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44ms. Found 3 JPA repository interfaces.
+2020-07-07 19:48:52.765  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-07 19:48:52.773  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-07 19:48:52.774  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-07 19:48:52.774  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-07-07 19:48:52.857  INFO mb1066 --- [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-07 19:48:52.857  INFO mb1066 --- [  restartedMain] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1331 ms
+2020-07-07 19:48:52.947  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-07-07 19:48:53.052  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-07-07 19:48:53.058  INFO mb1066 --- [  restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:chatdb'
+2020-07-07 19:48:53.242  INFO mb1066 --- [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-07 19:48:53.291  INFO mb1066 --- [  restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-07-07 19:48:53.392  INFO mb1066 --- [  restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-07 19:48:53.460  INFO mb1066 --- [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-07-07 19:48:54.016  INFO mb1066 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-07 19:48:54.036  INFO mb1066 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 19:48:54.068  INFO mb1066 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-07 19:48:54.455  WARN mb1066 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-07 19:48:54.635  INFO mb1066 --- [  restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@39d09275, org.springframework.security.web.context.SecurityContextPersistenceFilter@304a772c, org.springframework.security.web.header.HeaderWriterFilter@2115bee3, org.springframework.security.web.csrf.CsrfFilter@73ab123d, org.springframework.security.web.authentication.logout.LogoutFilter@3b70b3b7, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@1d8e0a8a, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@5a3f876d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@17f20fb9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d023148, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a94337f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@716b52e0, org.springframework.security.web.session.SessionManagementFilter@115535b0, org.springframework.security.web.access.ExceptionTranslationFilter@6090a346, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3f6b8874]
+2020-07-07 19:48:54.750  INFO mb1066 --- [  restartedMain] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-07 19:48:54.800  INFO mb1066 --- [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-07-07 19:48:55.010  INFO mb1066 --- [  restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-07 19:48:55.054  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-07-07 19:48:55.082  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-07 19:48:55.085  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Started Application in 3.912 seconds (JVM running for 4.975)
+2020-07-07 19:48:56.809  INFO mb1066 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-07 19:48:56.809  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-07 19:48:56.816  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 7 ms
+2020-07-07 19:49:05.813  INFO mb1066 --- [io-8080-exec-10] c.b.p.s.s.h.LogoutSuccessHandler         : user with id = 1 logged out successfully
+2020-07-07 19:49:05.814 DEBUG mb1066 --- [io-8080-exec-10] c.b.p.s.s.h.LogoutSuccessHandler         : Using default Url: /
+2020-07-07 19:51:06.791  INFO mb1066 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-07 19:51:06.792  INFO mb1066 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 19:51:06.902 ERROR mb1066 --- [onnection adder] c.z.h.p.HikariPool                       : HikariPool-1 - Error thrown while acquiring connection from data source
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Session.checkSuspended(Session.java:1369)
+	at org.h2.engine.Session.isOpen(Session.java:1303)
+	at org.h2.engine.Session.waitIfExclusiveModeEnabled(Session.java:1639)
+	at org.h2.command.Command.executeQuery(Command.java:186)
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:631)
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:398)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:719)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:705)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-07-07 19:51:07.007  WARN mb1066 --- [extShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-07-07 19:51:07.007  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-07-07 19:51:07.156  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-07-07 19:51:10.471  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Starting Application on mb1066 with PID 14004 (/Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage/target/classes started by astampa in /Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage)
+2020-07-07 19:51:10.476 DEBUG mb1066 --- [  restartedMain] c.b.p.s.Application                      : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-07-07 19:51:10.476  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : No active profile set, falling back to default profiles: default
+2020-07-07 19:51:10.502  INFO mb1066 --- [  restartedMain] o.s.b.d.r.ChangeableUrls                 : The Class-Path manifest attribute in /Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-07-07 19:51:10.502  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-07 19:51:10.503  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-07 19:51:11.156  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-07-07 19:51:11.198  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37ms. Found 3 JPA repository interfaces.
+2020-07-07 19:51:11.581  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-07 19:51:11.587  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-07 19:51:11.588  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-07 19:51:11.588  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-07-07 19:51:11.654  INFO mb1066 --- [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-07 19:51:11.654  INFO mb1066 --- [  restartedMain] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1151 ms
+2020-07-07 19:51:11.763  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-07-07 19:51:11.841  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-07-07 19:51:11.846  INFO mb1066 --- [  restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:chatdb'
+2020-07-07 19:51:12.003  INFO mb1066 --- [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-07 19:51:12.043  INFO mb1066 --- [  restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-07-07 19:51:12.111  INFO mb1066 --- [  restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-07 19:51:12.173  INFO mb1066 --- [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-07-07 19:51:12.648  INFO mb1066 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-07 19:51:12.652  INFO mb1066 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 19:51:12.676  INFO mb1066 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-07 19:51:12.957  WARN mb1066 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-07 19:51:13.084  INFO mb1066 --- [  restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@381b895b, org.springframework.security.web.context.SecurityContextPersistenceFilter@69eaea40, org.springframework.security.web.header.HeaderWriterFilter@4bfa0ede, org.springframework.security.web.csrf.CsrfFilter@1397a267, org.springframework.security.web.authentication.logout.LogoutFilter@4103f432, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@4710cd90, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@6232e375, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@76cd185d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@34c49936, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@65f29c4e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49939481, org.springframework.security.web.session.SessionManagementFilter@44e5ad07, org.springframework.security.web.access.ExceptionTranslationFilter@f2e0aa7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a6a7969]
+2020-07-07 19:51:13.176  INFO mb1066 --- [  restartedMain] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-07 19:51:13.221  INFO mb1066 --- [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-07-07 19:51:13.374  INFO mb1066 --- [  restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-07 19:51:13.412  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-07-07 19:51:13.439  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-07 19:51:13.441  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Started Application in 3.155 seconds (JVM running for 3.86)
+2020-07-07 19:51:19.434  INFO mb1066 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-07 19:51:19.434  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-07 19:51:19.440  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 5 ms
+2020-07-07 19:51:22.978  INFO mb1066 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-07 19:51:22.979  INFO mb1066 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 19:51:23.189  WARN mb1066 --- [extShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-07-07 19:51:23.190  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-07-07 19:51:23.238  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-07-07 19:51:26.206  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Starting Application on mb1066 with PID 14012 (/Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage/target/classes started by astampa in /Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage)
+2020-07-07 19:51:26.211 DEBUG mb1066 --- [  restartedMain] c.b.p.s.Application                      : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-07-07 19:51:26.212  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : No active profile set, falling back to default profiles: default
+2020-07-07 19:51:26.242  INFO mb1066 --- [  restartedMain] o.s.b.d.r.ChangeableUrls                 : The Class-Path manifest attribute in /Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-07-07 19:51:26.243  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-07 19:51:26.243  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-07 19:51:26.892  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-07-07 19:51:26.936  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40ms. Found 3 JPA repository interfaces.
+2020-07-07 19:51:27.404  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-07 19:51:27.411  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-07 19:51:27.412  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-07 19:51:27.412  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-07-07 19:51:27.483  INFO mb1066 --- [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-07 19:51:27.483  INFO mb1066 --- [  restartedMain] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1240 ms
+2020-07-07 19:51:27.576  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-07-07 19:51:27.699  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-07-07 19:51:27.704  INFO mb1066 --- [  restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:chatdb'
+2020-07-07 19:51:27.878  INFO mb1066 --- [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-07 19:51:27.922  INFO mb1066 --- [  restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-07-07 19:51:27.998  INFO mb1066 --- [  restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-07 19:51:28.070  INFO mb1066 --- [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-07-07 19:51:28.626  INFO mb1066 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-07 19:51:28.630  INFO mb1066 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 19:51:28.652  INFO mb1066 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-07 19:51:28.954  WARN mb1066 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-07 19:51:29.097  INFO mb1066 --- [  restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73f53658, org.springframework.security.web.context.SecurityContextPersistenceFilter@5ea81ed3, org.springframework.security.web.header.HeaderWriterFilter@687b445d, org.springframework.security.web.csrf.CsrfFilter@71f379a3, org.springframework.security.web.authentication.logout.LogoutFilter@5ff89ed9, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@74e2ac56, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@3f3d46de, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@12575d9e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@668f3095, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@331d31c6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7192a8aa, org.springframework.security.web.session.SessionManagementFilter@4ee41403, org.springframework.security.web.access.ExceptionTranslationFilter@6d10323, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4c306557]
+2020-07-07 19:51:29.194  INFO mb1066 --- [  restartedMain] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-07 19:51:29.242  INFO mb1066 --- [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-07-07 19:51:29.409  INFO mb1066 --- [  restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-07 19:51:29.450  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-07-07 19:51:29.475  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-07 19:51:29.478  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Started Application in 3.512 seconds (JVM running for 4.845)
+2020-07-07 19:51:53.011  INFO mb1066 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-07 19:51:53.013  INFO mb1066 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 19:51:53.225  WARN mb1066 --- [extShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-07-07 19:51:53.225  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-07-07 19:51:53.275  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-07-07 19:51:56.757  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Starting Application on mb1066 with PID 14023 (/Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage/target/classes started by astampa in /Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage)
+2020-07-07 19:51:56.763 DEBUG mb1066 --- [  restartedMain] c.b.p.s.Application                      : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-07-07 19:51:56.764  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : No active profile set, falling back to default profiles: default
+2020-07-07 19:51:56.796  INFO mb1066 --- [  restartedMain] o.s.b.d.r.ChangeableUrls                 : The Class-Path manifest attribute in /Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-07-07 19:51:56.797  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-07 19:51:56.797  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-07 19:51:57.418  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-07-07 19:51:57.462  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39ms. Found 3 JPA repository interfaces.
+2020-07-07 19:51:57.863  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-07 19:51:57.869  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-07 19:51:57.870  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-07 19:51:57.870  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-07-07 19:51:57.953  INFO mb1066 --- [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-07 19:51:57.953  INFO mb1066 --- [  restartedMain] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1156 ms
+2020-07-07 19:51:58.052  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-07-07 19:51:58.132  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-07-07 19:51:58.138  INFO mb1066 --- [  restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:chatdb'
+2020-07-07 19:51:58.302  INFO mb1066 --- [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-07 19:51:58.345  INFO mb1066 --- [  restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-07-07 19:51:58.415  INFO mb1066 --- [  restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-07 19:51:58.482  INFO mb1066 --- [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-07-07 19:51:59.039  INFO mb1066 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-07 19:51:59.043  INFO mb1066 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 19:51:59.065  INFO mb1066 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-07 19:51:59.353  WARN mb1066 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-07 19:51:59.480  INFO mb1066 --- [  restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64e13a78, org.springframework.security.web.context.SecurityContextPersistenceFilter@32f06a64, org.springframework.security.web.header.HeaderWriterFilter@7816f337, org.springframework.security.web.csrf.CsrfFilter@301cb62f, org.springframework.security.web.authentication.logout.LogoutFilter@1dd25c99, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@5bdc3308, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@7af8f515, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@14d5ae06, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@165c720c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6d33ec67, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18b36cbd, org.springframework.security.web.session.SessionManagementFilter@3642a88a, org.springframework.security.web.access.ExceptionTranslationFilter@29e97870, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2f3afa53]
+2020-07-07 19:51:59.576  INFO mb1066 --- [  restartedMain] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-07 19:51:59.623  INFO mb1066 --- [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-07-07 19:51:59.780  INFO mb1066 --- [  restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-07 19:51:59.821  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-07-07 19:51:59.849  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-07 19:51:59.852  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Started Application in 3.35 seconds (JVM running for 4.235)
+2020-07-07 19:52:06.689  INFO mb1066 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-07 19:52:06.689  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-07 19:52:06.696  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 6 ms
+2020-07-07 19:52:39.650  INFO mb1066 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-07 19:52:39.651  INFO mb1066 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 19:52:39.862  WARN mb1066 --- [extShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-07-07 19:52:39.862  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-07-07 19:52:39.912  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-07-07 19:52:43.327  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Starting Application on mb1066 with PID 14034 (/Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage/target/classes started by astampa in /Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage)
+2020-07-07 19:52:43.332 DEBUG mb1066 --- [  restartedMain] c.b.p.s.Application                      : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-07-07 19:52:43.333  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : No active profile set, falling back to default profiles: default
+2020-07-07 19:52:43.359  INFO mb1066 --- [  restartedMain] o.s.b.d.r.ChangeableUrls                 : The Class-Path manifest attribute in /Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-07-07 19:52:43.359  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-07 19:52:43.359  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-07 19:52:43.971  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-07-07 19:52:44.041  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64ms. Found 3 JPA repository interfaces.
+2020-07-07 19:52:44.461  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-07 19:52:44.467  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-07 19:52:44.467  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-07 19:52:44.468  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-07-07 19:52:44.532  INFO mb1066 --- [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-07 19:52:44.533  INFO mb1066 --- [  restartedMain] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1174 ms
+2020-07-07 19:52:44.633  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-07-07 19:52:44.718  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-07-07 19:52:44.724  INFO mb1066 --- [  restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:chatdb'
+2020-07-07 19:52:44.933  INFO mb1066 --- [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-07 19:52:44.978  INFO mb1066 --- [  restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-07-07 19:52:45.055  INFO mb1066 --- [  restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-07 19:52:45.118  INFO mb1066 --- [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-07-07 19:52:45.655  INFO mb1066 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-07 19:52:45.659  INFO mb1066 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 19:52:45.683  INFO mb1066 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-07 19:52:45.990  WARN mb1066 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-07 19:52:46.144  INFO mb1066 --- [  restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3c58c20a, org.springframework.security.web.context.SecurityContextPersistenceFilter@782ab701, org.springframework.security.web.header.HeaderWriterFilter@3442d1e5, org.springframework.security.web.csrf.CsrfFilter@11c00c77, org.springframework.security.web.authentication.logout.LogoutFilter@a6477c, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@3af5c9d3, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@4c7a728c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3cf42916, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4187d980, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2475d3db, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@30ab60f4, org.springframework.security.web.session.SessionManagementFilter@21dede3e, org.springframework.security.web.access.ExceptionTranslationFilter@62b6e9d3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@45237e0f]
+2020-07-07 19:52:46.250  INFO mb1066 --- [  restartedMain] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-07 19:52:46.297  INFO mb1066 --- [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-07-07 19:52:46.470  INFO mb1066 --- [  restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-07 19:52:46.512  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-07-07 19:52:46.539  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-07 19:52:46.541  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Started Application in 3.42 seconds (JVM running for 5.392)
+2020-07-07 19:52:48.847  INFO mb1066 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-07 19:52:48.847  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-07 19:52:48.853  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 5 ms
+2020-07-07 19:52:52.585  INFO mb1066 --- [nio-8080-exec-2] c.b.p.s.s.h.LogoutSuccessHandler         : user with id = 1 logged out successfully
+2020-07-07 19:52:52.585 DEBUG mb1066 --- [nio-8080-exec-2] c.b.p.s.s.h.LogoutSuccessHandler         : Using default Url: /
+2020-07-07 19:54:09.275  INFO mb1066 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-07 19:54:09.276  INFO mb1066 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 19:54:09.491  WARN mb1066 --- [extShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-07-07 19:54:09.492  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-07-07 19:54:09.542  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-07-07 19:54:14.016  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Starting Application on mb1066 with PID 14051 (/Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage/target/classes started by astampa in /Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage)
+2020-07-07 19:54:14.020 DEBUG mb1066 --- [  restartedMain] c.b.p.s.Application                      : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-07-07 19:54:14.021  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : No active profile set, falling back to default profiles: default
+2020-07-07 19:54:14.046  INFO mb1066 --- [  restartedMain] o.s.b.d.r.ChangeableUrls                 : The Class-Path manifest attribute in /Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-07-07 19:54:14.046  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-07 19:54:14.047  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-07 19:54:14.659  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-07-07 19:54:14.708  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42ms. Found 3 JPA repository interfaces.
+2020-07-07 19:54:15.157  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-07 19:54:15.163  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-07 19:54:15.164  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-07 19:54:15.164  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-07-07 19:54:15.236  INFO mb1066 --- [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-07 19:54:15.236  INFO mb1066 --- [  restartedMain] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1189 ms
+2020-07-07 19:54:15.345  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-07-07 19:54:15.428  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-07-07 19:54:15.434  INFO mb1066 --- [  restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:chatdb'
+2020-07-07 19:54:15.667  INFO mb1066 --- [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-07 19:54:15.709  INFO mb1066 --- [  restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-07-07 19:54:15.784  INFO mb1066 --- [  restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-07 19:54:15.850  INFO mb1066 --- [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-07-07 19:54:16.473  INFO mb1066 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-07 19:54:16.478  INFO mb1066 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 19:54:16.500  INFO mb1066 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-07 19:54:16.796  WARN mb1066 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-07 19:54:16.942  INFO mb1066 --- [  restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14b75593, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c921d94, org.springframework.security.web.header.HeaderWriterFilter@621a4378, org.springframework.security.web.csrf.CsrfFilter@304119c, org.springframework.security.web.authentication.logout.LogoutFilter@1d490ff0, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@6a1493fb, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@1b7ce72d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5010ddc8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@10324eb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@236b9b0e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52dc4e7d, org.springframework.security.web.session.SessionManagementFilter@3bd5b6c0, org.springframework.security.web.access.ExceptionTranslationFilter@479245dd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1481e48f]
+2020-07-07 19:54:17.058  INFO mb1066 --- [  restartedMain] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-07 19:54:17.110  INFO mb1066 --- [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-07-07 19:54:17.311  INFO mb1066 --- [  restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-07 19:54:17.353  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-07-07 19:54:17.382  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-07 19:54:17.384  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Started Application in 3.572 seconds (JVM running for 5.552)
+2020-07-07 19:54:18.844  INFO mb1066 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-07 19:54:18.845  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-07 19:54:18.850  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 5 ms
+2020-07-07 19:54:33.303  INFO mb1066 --- [nio-8080-exec-5] c.b.p.s.s.h.LoginSuccessHandler          : user with id = 2 has been logged in successfully
+2020-07-07 19:54:33.306 DEBUG mb1066 --- [nio-8080-exec-5] c.b.p.s.s.h.LoginSuccessHandler          : Redirecting to DefaultSavedRequest Url: http://localhost:8080/channels
+2020-07-07 19:54:37.281  INFO mb1066 --- [nio-8080-exec-8] c.b.p.s.s.h.LogoutSuccessHandler         : user with id = 2 logged out successfully
+2020-07-07 19:54:37.281 DEBUG mb1066 --- [nio-8080-exec-8] c.b.p.s.s.h.LogoutSuccessHandler         : Using default Url: /
+2020-07-07 19:54:59.247  INFO mb1066 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-07 19:54:59.251  INFO mb1066 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 19:54:59.467  WARN mb1066 --- [extShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-07-07 19:54:59.468  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-07-07 19:54:59.517  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-07-07 19:55:03.159  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Starting Application on mb1066 with PID 14064 (/Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage/target/classes started by astampa in /Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage)
+2020-07-07 19:55:03.166 DEBUG mb1066 --- [  restartedMain] c.b.p.s.Application                      : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-07-07 19:55:03.167  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : No active profile set, falling back to default profiles: default
+2020-07-07 19:55:03.201  INFO mb1066 --- [  restartedMain] o.s.b.d.r.ChangeableUrls                 : The Class-Path manifest attribute in /Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-07-07 19:55:03.201  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-07 19:55:03.201  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-07 19:55:03.828  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-07-07 19:55:03.879  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45ms. Found 3 JPA repository interfaces.
+2020-07-07 19:55:04.325  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-07 19:55:04.332  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-07 19:55:04.332  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-07 19:55:04.333  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-07-07 19:55:04.402  INFO mb1066 --- [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-07 19:55:04.402  INFO mb1066 --- [  restartedMain] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1200 ms
+2020-07-07 19:55:04.504  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-07-07 19:55:04.589  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-07-07 19:55:04.594  INFO mb1066 --- [  restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:chatdb'
+2020-07-07 19:55:04.771  INFO mb1066 --- [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-07 19:55:04.814  INFO mb1066 --- [  restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-07-07 19:55:04.886  INFO mb1066 --- [  restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-07 19:55:04.953  INFO mb1066 --- [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-07-07 19:55:05.547  INFO mb1066 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-07 19:55:05.552  INFO mb1066 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 19:55:05.575  INFO mb1066 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-07 19:55:05.884  WARN mb1066 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-07 19:55:06.039  INFO mb1066 --- [  restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@54f17bc, org.springframework.security.web.context.SecurityContextPersistenceFilter@201524ea, org.springframework.security.web.header.HeaderWriterFilter@4ac7d56d, org.springframework.security.web.csrf.CsrfFilter@ad9be61, org.springframework.security.web.authentication.logout.LogoutFilter@204bad28, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@2a25bb7a, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@61baa6cc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2cff41fc, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@699d7ad, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5d564df6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@41497363, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b192a61, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64db1f8f, org.springframework.security.web.session.SessionManagementFilter@27986e0f, org.springframework.security.web.access.ExceptionTranslationFilter@23e3ee99, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@64d15885]
+2020-07-07 19:55:06.146  INFO mb1066 --- [  restartedMain] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-07 19:55:06.195  INFO mb1066 --- [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-07-07 19:55:06.370  INFO mb1066 --- [  restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-07 19:55:06.409  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-07-07 19:55:06.436  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-07 19:55:06.438  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Started Application in 3.551 seconds (JVM running for 4.534)
+2020-07-07 19:55:07.407  INFO mb1066 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-07 19:55:07.408  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-07 19:55:07.414  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 6 ms
+2020-07-07 19:55:33.640  INFO mb1066 --- [nio-8080-exec-3] c.b.p.s.s.h.LoginSuccessHandler          : Name: [117455012703181895211], Granted Authorities: [[ROLE_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]], User Attributes: [{at_hash=RQRzgISOecUh3kyJnxiBqg, sub=117455012703181895211, email_verified=true, iss=https://accounts.google.com, given_name=Aaron, locale=de, nonce=K0462lEWhp6Cc_-mF1aqJ2eGfkr7bFUTTpRAvYJOx5k, picture=https://lh5.googleusercontent.com/-RliXLkMV46Q/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnYLIJU7zQ_f9zxLie75GEvTQj3-w/s96-c/photo.jpg, aud=[941832897112-4h5r9fscdpjelp03ko0sd7au6dtsnktb.apps.googleusercontent.com], azp=941832897112-4h5r9fscdpjelp03ko0sd7au6dtsnktb.apps.googleusercontent.com, name=Aaron Stampa, exp=2020-07-07T18:55:12Z, family_name=Stampa, iat=2020-07-07T17:55:12Z, email=aaron.stampa.work@gmail.com}]
+2020-07-07 19:55:33.642 DEBUG mb1066 --- [nio-8080-exec-3] c.b.p.s.s.h.LoginSuccessHandler          : Redirecting to DefaultSavedRequest Url: http://localhost:8080/
+2020-07-07 19:55:45.008  INFO mb1066 --- [nio-8080-exec-4] c.b.p.s.s.h.LogoutSuccessHandler         : google user successfully logged out
+2020-07-07 19:55:45.008 DEBUG mb1066 --- [nio-8080-exec-4] c.b.p.s.s.h.LogoutSuccessHandler         : Using default Url: /
+2020-07-07 19:56:10.729  INFO mb1066 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-07 19:56:10.731  INFO mb1066 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 19:56:10.739 ERROR mb1066 --- [onnection adder] c.z.h.p.HikariPool                       : HikariPool-1 - Error thrown while acquiring connection from data source
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Session.checkSuspended(Session.java:1369)
+	at org.h2.engine.Session.transitionToState(Session.java:1361)
+	at org.h2.engine.Session.waitIfExclusiveModeEnabled(Session.java:1633)
+	at org.h2.command.Command.executeQuery(Command.java:186)
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:631)
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:398)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:719)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:705)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-07-07 19:56:10.940  WARN mb1066 --- [extShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-07-07 19:56:10.940  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-07-07 19:56:10.999  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-07-07 19:56:15.891  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Starting Application on mb1066 with PID 14079 (/Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage/target/classes started by astampa in /Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage)
+2020-07-07 19:56:15.896 DEBUG mb1066 --- [  restartedMain] c.b.p.s.Application                      : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-07-07 19:56:15.896  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : No active profile set, falling back to default profiles: default
+2020-07-07 19:56:15.921  INFO mb1066 --- [  restartedMain] o.s.b.d.r.ChangeableUrls                 : The Class-Path manifest attribute in /Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-07-07 19:56:15.921  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-07 19:56:15.921  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-07 19:56:16.586  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-07-07 19:56:16.631  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40ms. Found 3 JPA repository interfaces.
+2020-07-07 19:56:17.088  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-07 19:56:17.095  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-07 19:56:17.095  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-07 19:56:17.096  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-07-07 19:56:17.188  INFO mb1066 --- [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-07 19:56:17.189  INFO mb1066 --- [  restartedMain] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1268 ms
+2020-07-07 19:56:17.280  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-07-07 19:56:17.357  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-07-07 19:56:17.362  INFO mb1066 --- [  restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:chatdb'
+2020-07-07 19:56:17.540  INFO mb1066 --- [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-07 19:56:17.582  INFO mb1066 --- [  restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-07-07 19:56:17.647  INFO mb1066 --- [  restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-07 19:56:17.709  INFO mb1066 --- [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-07-07 19:56:18.355  INFO mb1066 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-07 19:56:18.360  INFO mb1066 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 19:56:18.384  INFO mb1066 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-07 19:56:18.681  WARN mb1066 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-07 19:56:18.811  INFO mb1066 --- [  restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2f6f19d1, org.springframework.security.web.context.SecurityContextPersistenceFilter@5e3b41c1, org.springframework.security.web.header.HeaderWriterFilter@7595d2c8, org.springframework.security.web.csrf.CsrfFilter@9329125, org.springframework.security.web.authentication.logout.LogoutFilter@74324c3a, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@72e0ca58, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@60d58dce, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@62af1778, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e7bb3aa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58f9282d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e88e489, org.springframework.security.web.session.SessionManagementFilter@73c1056b, org.springframework.security.web.access.ExceptionTranslationFilter@f85a1ae, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@52e0dff6]
+2020-07-07 19:56:18.908  INFO mb1066 --- [  restartedMain] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-07 19:56:18.957  INFO mb1066 --- [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-07-07 19:56:19.135  INFO mb1066 --- [  restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-07 19:56:19.174  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-07-07 19:56:19.201  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-07 19:56:19.204  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Started Application in 3.516 seconds (JVM running for 5.746)
+2020-07-07 19:56:20.095  INFO mb1066 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-07 19:56:20.095  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-07 19:56:20.101  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 6 ms
+2020-07-07 19:59:13.028  INFO mb1066 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-07 19:59:13.030  INFO mb1066 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 19:59:13.253  WARN mb1066 --- [extShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-07-07 19:59:13.254  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-07-07 19:59:13.296  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-07-07 19:59:17.936  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Starting Application on mb1066 with PID 14111 (/Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage/target/classes started by astampa in /Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage)
+2020-07-07 19:59:17.941 DEBUG mb1066 --- [  restartedMain] c.b.p.s.Application                      : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-07-07 19:59:17.941  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : No active profile set, falling back to default profiles: default
+2020-07-07 19:59:17.968  INFO mb1066 --- [  restartedMain] o.s.b.d.r.ChangeableUrls                 : The Class-Path manifest attribute in /Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-07-07 19:59:17.968  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-07 19:59:17.969  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-07 19:59:18.688  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-07-07 19:59:18.735  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42ms. Found 3 JPA repository interfaces.
+2020-07-07 19:59:19.192  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-07 19:59:19.198  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-07 19:59:19.199  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-07 19:59:19.200  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-07-07 19:59:19.268  INFO mb1066 --- [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-07 19:59:19.269  INFO mb1066 --- [  restartedMain] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1300 ms
+2020-07-07 19:59:19.356  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-07-07 19:59:19.437  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-07-07 19:59:19.442  INFO mb1066 --- [  restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:chatdb'
+2020-07-07 19:59:19.637  INFO mb1066 --- [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-07 19:59:19.679  INFO mb1066 --- [  restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-07-07 19:59:19.745  INFO mb1066 --- [  restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-07 19:59:19.808  INFO mb1066 --- [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-07-07 19:59:20.359  INFO mb1066 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-07 19:59:20.364  INFO mb1066 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 19:59:20.387  INFO mb1066 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-07 19:59:20.689  WARN mb1066 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-07 19:59:20.823  INFO mb1066 --- [  restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@610d0ed7, org.springframework.security.web.context.SecurityContextPersistenceFilter@7cfb174, org.springframework.security.web.header.HeaderWriterFilter@669e88a5, org.springframework.security.web.csrf.CsrfFilter@74dab97a, org.springframework.security.web.authentication.logout.LogoutFilter@49a1eff4, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@5e005da3, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@2a93c9de, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71600850, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34a7b6f1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1866b8be, org.springframework.security.web.session.SessionManagementFilter@334ad3cf, org.springframework.security.web.access.ExceptionTranslationFilter@59cdae2b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5f8bcde2]
+2020-07-07 19:59:20.926  INFO mb1066 --- [  restartedMain] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-07 19:59:20.973  INFO mb1066 --- [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-07-07 19:59:21.143  INFO mb1066 --- [  restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-07 19:59:21.184  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-07-07 19:59:21.212  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-07 19:59:21.214  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Started Application in 3.513 seconds (JVM running for 5.522)
+2020-07-07 19:59:21.354  INFO mb1066 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-07 19:59:21.355  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-07 19:59:21.361  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 6 ms
+2020-07-07 20:00:17.640  INFO mb1066 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-07 20:00:17.641  INFO mb1066 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 20:00:17.853  WARN mb1066 --- [extShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-07-07 20:00:17.853  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-07-07 20:00:17.905  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-07-07 20:00:22.750  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Starting Application on mb1066 with PID 14124 (/Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage/target/classes started by astampa in /Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage)
+2020-07-07 20:00:22.757 DEBUG mb1066 --- [  restartedMain] c.b.p.s.Application                      : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-07-07 20:00:22.758  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : No active profile set, falling back to default profiles: default
+2020-07-07 20:00:22.792  INFO mb1066 --- [  restartedMain] o.s.b.d.r.ChangeableUrls                 : The Class-Path manifest attribute in /Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-07-07 20:00:22.793  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-07 20:00:22.793  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-07 20:00:23.715  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-07-07 20:00:23.787  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63ms. Found 3 JPA repository interfaces.
+2020-07-07 20:00:24.410  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-07 20:00:24.419  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-07 20:00:24.420  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-07 20:00:24.420  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-07-07 20:00:24.535  INFO mb1066 --- [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-07 20:00:24.535  INFO mb1066 --- [  restartedMain] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1742 ms
+2020-07-07 20:00:24.656  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-07-07 20:00:24.757  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-07-07 20:00:24.764  INFO mb1066 --- [  restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:chatdb'
+2020-07-07 20:00:24.995  INFO mb1066 --- [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-07 20:00:25.047  INFO mb1066 --- [  restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-07-07 20:00:25.136  INFO mb1066 --- [  restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-07 20:00:25.229  INFO mb1066 --- [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-07-07 20:00:25.973  INFO mb1066 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-07 20:00:25.980  INFO mb1066 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 20:00:26.014  INFO mb1066 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-07 20:00:26.414  WARN mb1066 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-07 20:00:26.587  INFO mb1066 --- [  restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2fd860a0, org.springframework.security.web.context.SecurityContextPersistenceFilter@6fd92bd0, org.springframework.security.web.header.HeaderWriterFilter@1cd1d168, org.springframework.security.web.csrf.CsrfFilter@6739349f, org.springframework.security.web.authentication.logout.LogoutFilter@6e2ba6e6, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@7842093, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@72a17d46, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@b82705e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@43731bcf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a8830ef, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@23a8886, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47574894, org.springframework.security.web.session.SessionManagementFilter@3e78beee, org.springframework.security.web.access.ExceptionTranslationFilter@4620fef6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@58a148e4]
+2020-07-07 20:00:26.708  INFO mb1066 --- [  restartedMain] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-07 20:00:26.763  INFO mb1066 --- [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-07-07 20:00:26.975  INFO mb1066 --- [  restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-07 20:00:27.031  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-07-07 20:00:27.067  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-07 20:00:27.070  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Started Application in 4.601 seconds (JVM running for 6.777)
+2020-07-07 20:00:35.064  INFO mb1066 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-07 20:00:35.064  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-07 20:00:35.069  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 5 ms
+2020-07-07 20:04:24.174  INFO mb1066 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-07 20:04:24.175  INFO mb1066 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 20:04:24.389  WARN mb1066 --- [extShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-07-07 20:04:24.389  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-07-07 20:04:24.439  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-07-07 20:04:29.068  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Starting Application on mb1066 with PID 14171 (/Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage/target/classes started by astampa in /Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage)
+2020-07-07 20:04:29.074 DEBUG mb1066 --- [  restartedMain] c.b.p.s.Application                      : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-07-07 20:04:29.075  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : No active profile set, falling back to default profiles: default
+2020-07-07 20:04:29.107  INFO mb1066 --- [  restartedMain] o.s.b.d.r.ChangeableUrls                 : The Class-Path manifest attribute in /Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-07-07 20:04:29.107  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-07 20:04:29.107  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-07 20:04:29.739  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-07-07 20:04:29.784  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 3 JPA repository interfaces.
+2020-07-07 20:04:30.227  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-07 20:04:30.234  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-07 20:04:30.235  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-07 20:04:30.235  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-07-07 20:04:30.325  INFO mb1066 --- [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-07 20:04:30.325  INFO mb1066 --- [  restartedMain] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1217 ms
+2020-07-07 20:04:30.423  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-07-07 20:04:30.508  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-07-07 20:04:30.513  INFO mb1066 --- [  restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:chatdb'
+2020-07-07 20:04:30.663  INFO mb1066 --- [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-07 20:04:30.703  INFO mb1066 --- [  restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-07-07 20:04:30.773  INFO mb1066 --- [  restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-07 20:04:30.840  INFO mb1066 --- [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-07-07 20:04:31.399  INFO mb1066 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-07 20:04:31.404  INFO mb1066 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 20:04:31.426  INFO mb1066 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-07 20:04:31.715  WARN mb1066 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-07 20:04:31.849  INFO mb1066 --- [  restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@74a4b7af, org.springframework.security.web.context.SecurityContextPersistenceFilter@687f817a, org.springframework.security.web.header.HeaderWriterFilter@508df870, org.springframework.security.web.csrf.CsrfFilter@133bf2e6, org.springframework.security.web.authentication.logout.LogoutFilter@2f0c6563, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@4a11e72b, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@48fbb1fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b801701, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7229327b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7bdeb786, org.springframework.security.web.session.SessionManagementFilter@66d51e11, org.springframework.security.web.access.ExceptionTranslationFilter@6a561df1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6a9ced9f]
+2020-07-07 20:04:31.947  INFO mb1066 --- [  restartedMain] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-07 20:04:31.994  INFO mb1066 --- [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-07-07 20:04:32.167  INFO mb1066 --- [  restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-07 20:04:32.217  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-07-07 20:04:32.252  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-07 20:04:32.256  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Started Application in 3.399 seconds (JVM running for 5.413)
+2020-07-07 20:04:34.430  INFO mb1066 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-07 20:04:34.430  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-07 20:04:34.437  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 7 ms
+2020-07-07 20:04:42.326  INFO mb1066 --- [nio-8080-exec-5] c.b.p.s.s.h.LoginSuccessHandler          : Name: [117455012703181895211], Granted Authorities: [[ROLE_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]], User Attributes: [{at_hash=SjifZLOA8CkvtjVP41StFg, sub=117455012703181895211, email_verified=true, iss=https://accounts.google.com, given_name=Aaron, locale=de, nonce=-xrxDb3A4f0FlJTFeWaFb51eCJ8_ZqRdmOoeiW18zpM, picture=https://lh5.googleusercontent.com/-RliXLkMV46Q/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnYLIJU7zQ_f9zxLie75GEvTQj3-w/s96-c/photo.jpg, aud=[941832897112-4h5r9fscdpjelp03ko0sd7au6dtsnktb.apps.googleusercontent.com], azp=941832897112-4h5r9fscdpjelp03ko0sd7au6dtsnktb.apps.googleusercontent.com, name=Aaron Stampa, exp=2020-07-07T19:04:39Z, family_name=Stampa, iat=2020-07-07T18:04:39Z, email=aaron.stampa.work@gmail.com}]
+2020-07-07 20:04:42.327 DEBUG mb1066 --- [nio-8080-exec-5] c.b.p.s.s.h.LoginSuccessHandler          : Using default Url: /
+2020-07-07 20:06:26.171  INFO mb1066 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-07 20:06:26.172  INFO mb1066 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 20:06:26.179 ERROR mb1066 --- [onnection adder] c.z.h.p.HikariPool                       : HikariPool-1 - Error thrown while acquiring connection from data source
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Session.checkSuspended(Session.java:1369)
+	at org.h2.engine.Session.transitionToState(Session.java:1361)
+	at org.h2.engine.Session.setCurrentCommand(Session.java:1343)
+	at org.h2.engine.Session.endStatement(Session.java:1887)
+	at org.h2.command.Command.executeQuery(Command.java:227)
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:631)
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:398)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:719)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:705)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-07-07 20:06:26.383  WARN mb1066 --- [extShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-07-07 20:06:26.383  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-07-07 20:06:26.433  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-07-07 20:06:29.966  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Starting Application on mb1066 with PID 14197 (/Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage/target/classes started by astampa in /Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage)
+2020-07-07 20:06:29.971 DEBUG mb1066 --- [  restartedMain] c.b.p.s.Application                      : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-07-07 20:06:29.971  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : No active profile set, falling back to default profiles: default
+2020-07-07 20:06:29.997  INFO mb1066 --- [  restartedMain] o.s.b.d.r.ChangeableUrls                 : The Class-Path manifest attribute in /Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-07-07 20:06:29.998  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-07 20:06:29.998  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-07 20:06:30.736  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-07-07 20:06:30.791  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50ms. Found 3 JPA repository interfaces.
+2020-07-07 20:06:31.256  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-07 20:06:31.263  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-07 20:06:31.264  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-07 20:06:31.265  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-07-07 20:06:31.333  INFO mb1066 --- [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-07 20:06:31.333  INFO mb1066 --- [  restartedMain] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1335 ms
+2020-07-07 20:06:31.443  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-07-07 20:06:31.523  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-07-07 20:06:31.528  INFO mb1066 --- [  restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:chatdb'
+2020-07-07 20:06:31.710  INFO mb1066 --- [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-07 20:06:31.754  INFO mb1066 --- [  restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-07-07 20:06:31.825  INFO mb1066 --- [  restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-07 20:06:31.889  INFO mb1066 --- [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-07-07 20:06:32.452  INFO mb1066 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-07 20:06:32.458  INFO mb1066 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 20:06:32.487  INFO mb1066 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-07 20:06:32.796  WARN mb1066 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-07 20:06:32.936  INFO mb1066 --- [  restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@68f95c3c, org.springframework.security.web.context.SecurityContextPersistenceFilter@46f7a6b4, org.springframework.security.web.header.HeaderWriterFilter@159895b, org.springframework.security.web.csrf.CsrfFilter@7f917b49, org.springframework.security.web.authentication.logout.LogoutFilter@69b07426, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@4ef45d81, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@301921f4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f14207, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71f1db0f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@777529a4, org.springframework.security.web.session.SessionManagementFilter@5ff7a1c1, org.springframework.security.web.access.ExceptionTranslationFilter@457cb816, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7381529f]
+2020-07-07 20:06:33.039  INFO mb1066 --- [  restartedMain] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-07 20:06:33.087  INFO mb1066 --- [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-07-07 20:06:33.260  INFO mb1066 --- [  restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-07 20:06:33.303  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-07-07 20:06:33.331  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-07 20:06:33.333  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Started Application in 3.576 seconds (JVM running for 5.619)
+2020-07-07 20:06:33.503  INFO mb1066 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-07 20:06:33.504  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-07 20:06:33.509  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 5 ms
+2020-07-07 20:06:49.171  INFO mb1066 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-07 20:06:49.172  INFO mb1066 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 20:06:49.386  WARN mb1066 --- [extShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-07-07 20:06:49.387  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-07-07 20:06:49.433  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-07-07 20:06:51.940  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Starting Application on mb1066 with PID 14207 (/Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage/target/classes started by astampa in /Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage)
+2020-07-07 20:06:51.945 DEBUG mb1066 --- [  restartedMain] c.b.p.s.Application                      : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-07-07 20:06:51.946  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : No active profile set, falling back to default profiles: default
+2020-07-07 20:06:51.977  INFO mb1066 --- [  restartedMain] o.s.b.d.r.ChangeableUrls                 : The Class-Path manifest attribute in /Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-07-07 20:06:51.978  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-07 20:06:51.978  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-07 20:06:52.613  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-07-07 20:06:52.657  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39ms. Found 3 JPA repository interfaces.
+2020-07-07 20:06:53.089  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-07 20:06:53.095  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-07 20:06:53.095  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-07 20:06:53.096  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-07-07 20:06:53.186  INFO mb1066 --- [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-07 20:06:53.186  INFO mb1066 --- [  restartedMain] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1208 ms
+2020-07-07 20:06:53.283  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-07-07 20:06:53.364  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-07-07 20:06:53.369  INFO mb1066 --- [  restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:chatdb'
+2020-07-07 20:06:53.554  INFO mb1066 --- [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-07 20:06:53.601  INFO mb1066 --- [  restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-07-07 20:06:53.675  INFO mb1066 --- [  restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-07 20:06:53.741  INFO mb1066 --- [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-07-07 20:06:54.302  INFO mb1066 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-07 20:06:54.306  INFO mb1066 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 20:06:54.330  INFO mb1066 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-07 20:06:54.701  WARN mb1066 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-07 20:06:54.848  INFO mb1066 --- [  restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70eccad3, org.springframework.security.web.context.SecurityContextPersistenceFilter@143b7143, org.springframework.security.web.header.HeaderWriterFilter@3cc3e953, org.springframework.security.web.csrf.CsrfFilter@35e7a406, org.springframework.security.web.authentication.logout.LogoutFilter@22abf5c0, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@133ebbf6, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@1871754a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@768de8b0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e56873a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@592d7e95, org.springframework.security.web.session.SessionManagementFilter@51dd97d8, org.springframework.security.web.access.ExceptionTranslationFilter@7464ca1d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@694690a]
+2020-07-07 20:06:54.948  INFO mb1066 --- [  restartedMain] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-07 20:06:54.995  INFO mb1066 --- [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-07-07 20:06:55.172  INFO mb1066 --- [  restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-07 20:06:55.216  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-07-07 20:06:55.247  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-07 20:06:55.250  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Started Application in 3.577 seconds (JVM running for 4.602)
+2020-07-07 20:06:55.429  INFO mb1066 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-07 20:06:55.430  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-07 20:06:55.436  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 6 ms
+2020-07-07 20:10:48.285  INFO mb1066 --- [nio-8080-exec-3] c.b.p.s.s.h.LoginSuccessHandler          : Name: [117455012703181895211], Granted Authorities: [[ROLE_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]], User Attributes: [{at_hash=v-M3sNYeHtwllkNxiny1Rg, sub=117455012703181895211, email_verified=true, iss=https://accounts.google.com, given_name=Aaron, locale=de, nonce=lCiwgsGbN_V0q0UpeE4y7nRIekNXJXXaU1jY0whs74Q, picture=https://lh5.googleusercontent.com/-RliXLkMV46Q/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnYLIJU7zQ_f9zxLie75GEvTQj3-w/s96-c/photo.jpg, aud=[941832897112-4h5r9fscdpjelp03ko0sd7au6dtsnktb.apps.googleusercontent.com], azp=941832897112-4h5r9fscdpjelp03ko0sd7au6dtsnktb.apps.googleusercontent.com, name=Aaron Stampa, exp=2020-07-07T19:10:44Z, family_name=Stampa, iat=2020-07-07T18:10:44Z, email=aaron.stampa.work@gmail.com}]
+2020-07-07 20:10:48.285 DEBUG mb1066 --- [nio-8080-exec-3] c.b.p.s.s.h.LoginSuccessHandler          : Redirecting to DefaultSavedRequest Url: http://localhost:8080/logout
+2020-07-07 20:10:55.974  INFO mb1066 --- [nio-8080-exec-5] c.b.p.s.s.h.LogoutSuccessHandler         : google user successfully logged out
+2020-07-07 20:10:55.974 DEBUG mb1066 --- [nio-8080-exec-5] c.b.p.s.s.h.LogoutSuccessHandler         : Using default Url: /
+2020-07-07 20:11:34.406  INFO mb1066 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-07 20:11:34.408  INFO mb1066 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 20:11:34.523 ERROR mb1066 --- [onnection adder] c.z.h.p.HikariPool                       : HikariPool-1 - Error thrown while acquiring connection from data source
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Session.checkSuspended(Session.java:1369)
+	at org.h2.engine.Session.isOpen(Session.java:1303)
+	at org.h2.engine.Session.waitIfExclusiveModeEnabled(Session.java:1639)
+	at org.h2.command.Command.executeQuery(Command.java:186)
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:631)
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:398)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:719)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:705)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-07-07 20:11:34.626  WARN mb1066 --- [extShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-07-07 20:11:34.627  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-07-07 20:11:34.778  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-07-07 20:11:39.407  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Starting Application on mb1066 with PID 14400 (/Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage/target/classes started by astampa in /Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage)
+2020-07-07 20:11:39.412 DEBUG mb1066 --- [  restartedMain] c.b.p.s.Application                      : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-07-07 20:11:39.413  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : No active profile set, falling back to default profiles: default
+2020-07-07 20:11:39.438  INFO mb1066 --- [  restartedMain] o.s.b.d.r.ChangeableUrls                 : The Class-Path manifest attribute in /Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-07-07 20:11:39.438  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-07 20:11:39.439  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-07 20:11:40.083  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-07-07 20:11:40.130  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42ms. Found 3 JPA repository interfaces.
+2020-07-07 20:11:40.567  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-07 20:11:40.573  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-07 20:11:40.574  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-07 20:11:40.574  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-07-07 20:11:40.659  INFO mb1066 --- [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-07 20:11:40.660  INFO mb1066 --- [  restartedMain] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1221 ms
+2020-07-07 20:11:40.753  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-07-07 20:11:40.836  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-07-07 20:11:40.843  INFO mb1066 --- [  restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:chatdb'
+2020-07-07 20:11:41.023  INFO mb1066 --- [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-07 20:11:41.072  INFO mb1066 --- [  restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-07-07 20:11:41.142  INFO mb1066 --- [  restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-07 20:11:41.204  INFO mb1066 --- [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-07-07 20:11:41.737  INFO mb1066 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-07 20:11:41.742  INFO mb1066 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 20:11:41.763  INFO mb1066 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-07 20:11:42.066  WARN mb1066 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-07 20:11:42.206  INFO mb1066 --- [  restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@9f56fec, org.springframework.security.web.context.SecurityContextPersistenceFilter@3390685a, org.springframework.security.web.header.HeaderWriterFilter@78fcfab4, org.springframework.security.web.csrf.CsrfFilter@150e2f01, org.springframework.security.web.authentication.logout.LogoutFilter@3dce080f, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@6e321b2d, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@1a1c9f22, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@57728f4c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b193e7f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@254eb114, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2738bbcb, org.springframework.security.web.session.SessionManagementFilter@2309af40, org.springframework.security.web.access.ExceptionTranslationFilter@2fe5c767, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5b9be666]
+2020-07-07 20:11:42.303  INFO mb1066 --- [  restartedMain] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-07 20:11:42.350  INFO mb1066 --- [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-07-07 20:11:42.508  INFO mb1066 --- [  restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-07 20:11:42.553  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-07-07 20:11:42.585  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-07 20:11:42.588  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Started Application in 3.407 seconds (JVM running for 5.408)
+2020-07-07 20:11:43.481  INFO mb1066 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-07 20:11:43.481  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-07 20:11:43.488  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 6 ms
+2020-07-07 20:11:49.546  INFO mb1066 --- [nio-8080-exec-4] c.b.p.s.s.h.LoginSuccessHandler          : user with id = 1 has been logged in successfully
+2020-07-07 20:11:49.546 DEBUG mb1066 --- [nio-8080-exec-4] c.b.p.s.s.h.LoginSuccessHandler          : Redirecting to DefaultSavedRequest Url: http://localhost:8080/
+2020-07-07 20:11:52.595  INFO mb1066 --- [nio-8080-exec-8] c.b.p.s.s.h.LogoutSuccessHandler         : user with id = 1 logged out successfully
+2020-07-07 20:11:52.595 DEBUG mb1066 --- [nio-8080-exec-8] c.b.p.s.s.h.LogoutSuccessHandler         : Using default Url: /
+2020-07-07 20:11:56.758  INFO mb1066 --- [nio-8080-exec-2] c.b.p.s.s.h.LoginSuccessHandler          : Name: [103610252698496756224], Granted Authorities: [[ROLE_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]], User Attributes: [{at_hash=9CcRNdB3LJmuPwtWUgSAAw, sub=103610252698496756224, email_verified=true, iss=https://accounts.google.com, given_name=Olafl, locale=de, nonce=uGo4BjZ0KfgKl1BYZRkHlt8iafT-J1XnfIDUONqrxK4, picture=https://lh3.googleusercontent.com/a-/AOh14GhXo34TkyTAR6oEs8DoYbAHwKIUxUVI68K8bV-m4g=s96-c, aud=[941832897112-4h5r9fscdpjelp03ko0sd7au6dtsnktb.apps.googleusercontent.com], azp=941832897112-4h5r9fscdpjelp03ko0sd7au6dtsnktb.apps.googleusercontent.com, name=Olafl, exp=2020-07-07T19:11:56Z, iat=2020-07-07T18:11:56Z, email=stampaaaron@gmail.com}]
+2020-07-07 20:11:56.759 DEBUG mb1066 --- [nio-8080-exec-2] c.b.p.s.s.h.LoginSuccessHandler          : Redirecting to DefaultSavedRequest Url: http://localhost:8080/
+2020-07-07 20:12:03.934 ERROR mb1066 --- [nio-8080-exec-9] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.ClassCastException: class org.springframework.security.oauth2.core.oidc.user.DefaultOidcUser cannot be cast to class ch.bbw.pr.sospri.domain.User (org.springframework.security.oauth2.core.oidc.user.DefaultOidcUser is in unnamed module of loader 'app'; ch.bbw.pr.sospri.domain.User is in unnamed module of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @7729cdce)
+	at ch.bbw.pr.sospri.security.handler.CustomAccessDeniedHandler.handle(CustomAccessDeniedHandler.java:28)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.handleSpringSecurityException(ExceptionTranslationFilter.java:198)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:140)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter.doFilterInternal(OAuth2AuthorizationRequestRedirectFilter.java:160)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-07-07 20:13:51.479  INFO mb1066 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-07 20:13:51.480  INFO mb1066 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 20:13:51.594 ERROR mb1066 --- [onnection adder] c.z.h.p.HikariPool                       : HikariPool-1 - Error thrown while acquiring connection from data source
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Session.checkSuspended(Session.java:1369)
+	at org.h2.engine.Session.isOpen(Session.java:1303)
+	at org.h2.engine.Session.waitIfExclusiveModeEnabled(Session.java:1639)
+	at org.h2.command.Command.executeQuery(Command.java:186)
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:631)
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:398)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:719)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:705)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-07-07 20:13:51.701  WARN mb1066 --- [extShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-07-07 20:13:51.702  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-07-07 20:13:51.848  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-07-07 20:13:56.702  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Starting Application on mb1066 with PID 14427 (/Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage/target/classes started by astampa in /Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage)
+2020-07-07 20:13:56.708 DEBUG mb1066 --- [  restartedMain] c.b.p.s.Application                      : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-07-07 20:13:56.709  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : No active profile set, falling back to default profiles: default
+2020-07-07 20:13:56.737  INFO mb1066 --- [  restartedMain] o.s.b.d.r.ChangeableUrls                 : The Class-Path manifest attribute in /Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-07-07 20:13:56.738  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-07 20:13:56.738  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-07 20:13:57.377  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-07-07 20:13:57.426  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44ms. Found 3 JPA repository interfaces.
+2020-07-07 20:13:57.929  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-07 20:13:57.936  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-07 20:13:57.937  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-07 20:13:57.937  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-07-07 20:13:58.030  INFO mb1066 --- [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-07 20:13:58.030  INFO mb1066 --- [  restartedMain] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1292 ms
+2020-07-07 20:13:58.115  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-07-07 20:13:58.191  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-07-07 20:13:58.197  INFO mb1066 --- [  restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:chatdb'
+2020-07-07 20:13:58.347  INFO mb1066 --- [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-07 20:13:58.385  INFO mb1066 --- [  restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-07-07 20:13:58.455  INFO mb1066 --- [  restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-07 20:13:58.522  INFO mb1066 --- [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-07-07 20:13:59.063  INFO mb1066 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-07 20:13:59.067  INFO mb1066 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 20:13:59.090  INFO mb1066 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-07 20:13:59.383  WARN mb1066 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-07 20:13:59.523  INFO mb1066 --- [  restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4f97bc9e, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c6fff3e, org.springframework.security.web.header.HeaderWriterFilter@4a1fcd3a, org.springframework.security.web.csrf.CsrfFilter@6916ef7f, org.springframework.security.web.authentication.logout.LogoutFilter@f9a2224, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@2999b401, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@2ce9a159, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7fa73b09, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6aaf3a54, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e5bf0b1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@392dd98e, org.springframework.security.web.session.SessionManagementFilter@4992dfdd, org.springframework.security.web.access.ExceptionTranslationFilter@360b7cbc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@707964f8]
+2020-07-07 20:13:59.623  INFO mb1066 --- [  restartedMain] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-07 20:13:59.671  INFO mb1066 --- [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-07-07 20:13:59.826  INFO mb1066 --- [  restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-07 20:13:59.870  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-07-07 20:13:59.897  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-07 20:13:59.900  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Started Application in 3.439 seconds (JVM running for 5.562)
+2020-07-07 20:14:00.192  INFO mb1066 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-07 20:14:00.193  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-07 20:14:00.199  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 6 ms
+2020-07-07 20:14:05.466  INFO mb1066 --- [nio-8080-exec-6] c.b.p.s.s.h.LoginSuccessHandler          : Name: [117455012703181895211], Granted Authorities: [[ROLE_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]], User Attributes: [{at_hash=te7oEbptwwZFtMnKh7Fxcg, sub=117455012703181895211, email_verified=true, iss=https://accounts.google.com, given_name=Aaron, locale=de, nonce=tmQuzirUPxJc9Pv2fM7wHrnrI9Br1tRymQsHSf2EXo4, picture=https://lh5.googleusercontent.com/-RliXLkMV46Q/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnYLIJU7zQ_f9zxLie75GEvTQj3-w/s96-c/photo.jpg, aud=[941832897112-4h5r9fscdpjelp03ko0sd7au6dtsnktb.apps.googleusercontent.com], azp=941832897112-4h5r9fscdpjelp03ko0sd7au6dtsnktb.apps.googleusercontent.com, name=Aaron Stampa, exp=2020-07-07T19:14:05Z, family_name=Stampa, iat=2020-07-07T18:14:05Z, email=aaron.stampa.work@gmail.com}]
+2020-07-07 20:14:05.466 DEBUG mb1066 --- [nio-8080-exec-6] c.b.p.s.s.h.LoginSuccessHandler          : Redirecting to DefaultSavedRequest Url: http://localhost:8080/channels/add
+2020-07-07 20:14:05.471  WARN mb1066 --- [nio-8080-exec-7] c.b.p.s.s.h.CustomAccessDeniedHandler    : a google user tried to access page http://localhost:8080/channels/add
+2020-07-07 20:14:09.933  WARN mb1066 --- [nio-8080-exec-3] c.b.p.s.s.h.CustomAccessDeniedHandler    : a google user tried to access page http://localhost:8080/members
+2020-07-07 20:14:20.260  INFO mb1066 --- [nio-8080-exec-7] c.b.p.s.s.h.LogoutSuccessHandler         : google user successfully logged out
+2020-07-07 20:14:20.261 DEBUG mb1066 --- [nio-8080-exec-7] c.b.p.s.s.h.LogoutSuccessHandler         : Using default Url: /
+2020-07-07 20:14:49.622  INFO mb1066 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-07 20:14:49.623  INFO mb1066 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 20:14:49.831  WARN mb1066 --- [extShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-07-07 20:14:49.832  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-07-07 20:14:49.884  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-07-07 20:14:53.388  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Starting Application on mb1066 with PID 14445 (/Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage/target/classes started by astampa in /Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage)
+2020-07-07 20:14:53.394 DEBUG mb1066 --- [  restartedMain] c.b.p.s.Application                      : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-07-07 20:14:53.394  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : No active profile set, falling back to default profiles: default
+2020-07-07 20:14:53.426  INFO mb1066 --- [  restartedMain] o.s.b.d.r.ChangeableUrls                 : The Class-Path manifest attribute in /Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-07-07 20:14:53.426  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-07 20:14:53.427  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-07 20:14:54.082  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-07-07 20:14:54.126  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39ms. Found 3 JPA repository interfaces.
+2020-07-07 20:14:54.557  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-07 20:14:54.564  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-07 20:14:54.565  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-07 20:14:54.566  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-07-07 20:14:54.660  INFO mb1066 --- [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-07 20:14:54.660  INFO mb1066 --- [  restartedMain] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1233 ms
+2020-07-07 20:14:54.760  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-07-07 20:14:54.846  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-07-07 20:14:54.851  INFO mb1066 --- [  restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:chatdb'
+2020-07-07 20:14:55.050  INFO mb1066 --- [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-07 20:14:55.101  INFO mb1066 --- [  restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-07-07 20:14:55.183  INFO mb1066 --- [  restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-07 20:14:55.257  INFO mb1066 --- [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-07-07 20:14:55.918  INFO mb1066 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-07 20:14:55.923  INFO mb1066 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 20:14:55.947  INFO mb1066 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-07 20:14:56.255  WARN mb1066 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-07 20:14:56.401  INFO mb1066 --- [  restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@516f193f, org.springframework.security.web.context.SecurityContextPersistenceFilter@4cedcd84, org.springframework.security.web.header.HeaderWriterFilter@cd0873a, org.springframework.security.web.csrf.CsrfFilter@22df8f8d, org.springframework.security.web.authentication.logout.LogoutFilter@5738b17e, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@e1c8aa7, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@68dff1d5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@59b4182f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3251570, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e411a48, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@38027fc9, org.springframework.security.web.session.SessionManagementFilter@6cf3f78a, org.springframework.security.web.access.ExceptionTranslationFilter@57f1cd51, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@18935fd8]
+2020-07-07 20:14:56.502  INFO mb1066 --- [  restartedMain] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-07 20:14:56.548  INFO mb1066 --- [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-07-07 20:14:56.702  INFO mb1066 --- [  restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-07 20:14:56.743  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-07-07 20:14:56.770  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-07 20:14:56.772  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Started Application in 3.662 seconds (JVM running for 4.6)
+2020-07-07 20:14:58.613  INFO mb1066 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-07 20:14:58.613  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-07 20:14:58.619  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 6 ms
+2020-07-07 20:15:57.163  INFO mb1066 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-07 20:15:57.164  INFO mb1066 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 20:15:57.378  WARN mb1066 --- [extShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-07-07 20:15:57.378  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-07-07 20:15:57.428  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-07-07 20:16:01.102  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Starting Application on mb1066 with PID 14463 (/Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage/target/classes started by astampa in /Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage)
+2020-07-07 20:16:01.107 DEBUG mb1066 --- [  restartedMain] c.b.p.s.Application                      : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-07-07 20:16:01.107  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : No active profile set, falling back to default profiles: default
+2020-07-07 20:16:01.132  INFO mb1066 --- [  restartedMain] o.s.b.d.r.ChangeableUrls                 : The Class-Path manifest attribute in /Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-07-07 20:16:01.132  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-07 20:16:01.132  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-07 20:16:01.747  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-07-07 20:16:01.792  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40ms. Found 3 JPA repository interfaces.
+2020-07-07 20:16:02.217  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-07 20:16:02.222  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-07 20:16:02.223  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-07 20:16:02.224  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-07-07 20:16:02.302  INFO mb1066 --- [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-07 20:16:02.302  INFO mb1066 --- [  restartedMain] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1170 ms
+2020-07-07 20:16:02.396  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-07-07 20:16:02.475  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-07-07 20:16:02.480  INFO mb1066 --- [  restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:chatdb'
+2020-07-07 20:16:02.651  INFO mb1066 --- [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-07 20:16:02.692  INFO mb1066 --- [  restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-07-07 20:16:02.760  INFO mb1066 --- [  restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-07 20:16:02.825  INFO mb1066 --- [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-07-07 20:16:03.393  INFO mb1066 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-07 20:16:03.398  INFO mb1066 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 20:16:03.421  INFO mb1066 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-07 20:16:03.717  WARN mb1066 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-07 20:16:03.848  INFO mb1066 --- [  restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51c7405, org.springframework.security.web.context.SecurityContextPersistenceFilter@624a162b, org.springframework.security.web.header.HeaderWriterFilter@13037e23, org.springframework.security.web.csrf.CsrfFilter@1afb4fda, org.springframework.security.web.authentication.logout.LogoutFilter@6976820f, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@735f0d29, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@11a9a560, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2974d9a5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@208e26b7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2101643f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1c7c7788, org.springframework.security.web.session.SessionManagementFilter@2371e9ae, org.springframework.security.web.access.ExceptionTranslationFilter@73ef7fc7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3c4102a1]
+2020-07-07 20:16:03.950  INFO mb1066 --- [  restartedMain] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-07 20:16:03.998  INFO mb1066 --- [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-07-07 20:16:04.172  INFO mb1066 --- [  restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-07 20:16:04.214  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-07-07 20:16:04.243  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-07 20:16:04.246  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Started Application in 3.35 seconds (JVM running for 5.341)
+2020-07-07 20:16:06.940  INFO mb1066 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-07 20:16:06.940  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-07 20:16:06.946  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 6 ms
+2020-07-07 20:19:09.120  INFO mb1066 --- [nio-8080-exec-1] c.b.p.s.s.h.LoginSuccessHandler          : user with id = 1 has been logged in successfully
+2020-07-07 20:19:09.120 DEBUG mb1066 --- [nio-8080-exec-1] c.b.p.s.s.h.LoginSuccessHandler          : Using default Url: /
+2020-07-07 20:19:13.888  INFO mb1066 --- [nio-8080-exec-3] c.b.p.s.s.h.LogoutSuccessHandler         : user with id = 1 logged out successfully
+2020-07-07 20:19:13.888 DEBUG mb1066 --- [nio-8080-exec-3] c.b.p.s.s.h.LogoutSuccessHandler         : Using default Url: /
+2020-07-07 20:19:18.414  INFO mb1066 --- [io-8080-exec-10] c.b.p.s.s.h.LoginSuccessHandler          : Name: [117455012703181895211], Granted Authorities: [[ROLE_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]], User Attributes: [{at_hash=TcQSxWRd6fhAvrzqj9LvMA, sub=117455012703181895211, email_verified=true, iss=https://accounts.google.com, given_name=Aaron, locale=de, nonce=kgdUW8MiyEbXHni3kP1aYtE4AsjvEzQYlKQsThk7sJM, picture=https://lh5.googleusercontent.com/-RliXLkMV46Q/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnYLIJU7zQ_f9zxLie75GEvTQj3-w/s96-c/photo.jpg, aud=[941832897112-4h5r9fscdpjelp03ko0sd7au6dtsnktb.apps.googleusercontent.com], azp=941832897112-4h5r9fscdpjelp03ko0sd7au6dtsnktb.apps.googleusercontent.com, name=Aaron Stampa, exp=2020-07-07T19:19:18Z, family_name=Stampa, iat=2020-07-07T18:19:18Z, email=aaron.stampa.work@gmail.com}]
+2020-07-07 20:19:18.415 DEBUG mb1066 --- [io-8080-exec-10] c.b.p.s.s.h.LoginSuccessHandler          : Redirecting to DefaultSavedRequest Url: http://localhost:8080/
+2020-07-07 20:19:19.805  WARN mb1066 --- [nio-8080-exec-6] c.b.p.s.s.h.CustomAccessDeniedHandler    : a google user tried to access page http://localhost:8080/members
+2020-07-07 20:19:24.091  INFO mb1066 --- [nio-8080-exec-3] c.b.p.s.s.h.LogoutSuccessHandler         : google user successfully logged out
+2020-07-07 20:19:24.091 DEBUG mb1066 --- [nio-8080-exec-3] c.b.p.s.s.h.LogoutSuccessHandler         : Using default Url: /
+2020-07-07 20:20:23.830  INFO mb1066 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-07 20:20:23.831  INFO mb1066 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 20:20:24.046  WARN mb1066 --- [extShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-07-07 20:20:24.047  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-07-07 20:20:24.096  INFO mb1066 --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-07-07 20:20:27.784  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Starting Application on mb1066 with PID 14532 (/Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage/target/classes started by astampa in /Users/astampa/school/modul_183/dev/51_01_SpringBootChatAppSoSpriAusgangslage)
+2020-07-07 20:20:27.789 DEBUG mb1066 --- [  restartedMain] c.b.p.s.Application                      : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-07-07 20:20:27.789  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : No active profile set, falling back to default profiles: default
+2020-07-07 20:20:27.814  INFO mb1066 --- [  restartedMain] o.s.b.d.r.ChangeableUrls                 : The Class-Path manifest attribute in /Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/astampa/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-07-07 20:20:27.815  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-07 20:20:27.815  INFO mb1066 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-07 20:20:28.433  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-07-07 20:20:28.494  INFO mb1066 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56ms. Found 3 JPA repository interfaces.
+2020-07-07 20:20:28.907  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-07 20:20:28.914  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-07 20:20:28.915  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-07 20:20:28.915  INFO mb1066 --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-07-07 20:20:28.979  INFO mb1066 --- [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-07 20:20:28.979  INFO mb1066 --- [  restartedMain] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1164 ms
+2020-07-07 20:20:29.079  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-07-07 20:20:29.169  INFO mb1066 --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-07-07 20:20:29.176  INFO mb1066 --- [  restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:chatdb'
+2020-07-07 20:20:29.450  INFO mb1066 --- [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-07 20:20:29.491  INFO mb1066 --- [  restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-07-07 20:20:29.557  INFO mb1066 --- [  restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-07 20:20:29.622  INFO mb1066 --- [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-07-07 20:20:30.230  INFO mb1066 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-07 20:20:30.236  INFO mb1066 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-07 20:20:30.266  INFO mb1066 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-07 20:20:30.580  WARN mb1066 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-07 20:20:30.720  INFO mb1066 --- [  restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b4ddeb7, org.springframework.security.web.context.SecurityContextPersistenceFilter@4326a326, org.springframework.security.web.header.HeaderWriterFilter@3bfb43c0, org.springframework.security.web.csrf.CsrfFilter@2be0bf8b, org.springframework.security.web.authentication.logout.LogoutFilter@3ef9d7b9, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@669627b0, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@5559450e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@755515f3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@52c9677c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@385c3ac4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a8186d8, org.springframework.security.web.session.SessionManagementFilter@50fb9164, org.springframework.security.web.access.ExceptionTranslationFilter@714cb51d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@54fe5760]
+2020-07-07 20:20:30.822  INFO mb1066 --- [  restartedMain] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-07 20:20:30.870  INFO mb1066 --- [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-07-07 20:20:31.039  INFO mb1066 --- [  restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-07 20:20:31.081  INFO mb1066 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-07-07 20:20:31.107  INFO mb1066 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-07 20:20:31.110  INFO mb1066 --- [  restartedMain] c.b.p.s.Application                      : Started Application in 3.527 seconds (JVM running for 5.63)
+2020-07-07 20:20:31.189  INFO mb1066 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-07 20:20:31.189  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-07 20:20:31.194  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 5 ms
+2020-07-07 20:20:35.201  INFO mb1066 --- [nio-8080-exec-5] c.b.p.s.s.h.LoginSuccessHandler          : Name: [117455012703181895211], Granted Authorities: [[ROLE_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]], User Attributes: [{at_hash=HiKU0m6NBYr_m5JqaybKpg, sub=117455012703181895211, email_verified=true, iss=https://accounts.google.com, given_name=Aaron, locale=de, nonce=8iSorv751uxzmIVWcYfD-zSUK7vdc9FnDoelbNUVnKE, picture=https://lh5.googleusercontent.com/-RliXLkMV46Q/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnYLIJU7zQ_f9zxLie75GEvTQj3-w/s96-c/photo.jpg, aud=[941832897112-4h5r9fscdpjelp03ko0sd7au6dtsnktb.apps.googleusercontent.com], azp=941832897112-4h5r9fscdpjelp03ko0sd7au6dtsnktb.apps.googleusercontent.com, name=Aaron Stampa, exp=2020-07-07T19:20:35Z, family_name=Stampa, iat=2020-07-07T18:20:35Z, email=aaron.stampa.work@gmail.com}]
+2020-07-07 20:20:35.201 DEBUG mb1066 --- [nio-8080-exec-5] c.b.p.s.s.h.LoginSuccessHandler          : Using default Url: /

@@ -22,8 +22,12 @@ public class LogoutSuccessHandler extends SimpleUrlLogoutSuccessHandler {
       Authentication authentication)
       throws IOException, ServletException {
 
-    User user = (User) authentication.getPrincipal();
-    log.info("user with id = {} logged out successfully", user.getId());
+    Object user = authentication.getPrincipal();
+    if (user instanceof User) {
+      log.info("user with id = {} logged out successfully", ((User) user).getId());
+    } else {
+      log.info("google user successfully logged out");
+    }
     super.onLogoutSuccess(request, response, authentication);
   }
 
