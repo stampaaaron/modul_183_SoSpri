@@ -4,7 +4,7 @@ import ch.bbw.pr.sospri.converter.UserConverter;
 import ch.bbw.pr.sospri.domain.User;
 import ch.bbw.pr.sospri.controller.message.RegisterMember;
 import ch.bbw.pr.sospri.repository.UserRepository;
-import ch.bbw.pr.sospri.security.Role;
+import ch.bbw.pr.sospri.security.auth.Role;
 import lombok.AllArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -36,9 +36,9 @@ public class UserService {
     user.setRole(Role.USER);
     user.setUsername(generateUserName(registerMember.getPrename(), registerMember.getLastname()));
 
-    String encodedPassword = passwordEncoder.encode(registerMember.getPassword());
+//    String encodedPassword = passwordEncoder.encode(registerMember.getPassword());
 
-    user.setPassword(encodedPassword);
+    user.setPassword(registerMember.getPassword());
     return repository.save(user);
   }
 

@@ -17,6 +17,14 @@
         });
     </script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script>
+        $(document).ready(function () {
+            $("#register-form").submit(e => {
+                $("#response").val(grecaptcha.getResponse());
+            });
+        });
+    </script>
+
 </head>
 
 <body>
@@ -102,14 +110,25 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div th:text="${@captchaSettings.getSite()}"></div>
-                                    <div class="g-recaptcha"
+
+                                    <input type="hidden" id="response" name="captchaResponse" th:field="*{captchaResponse}"/>
+                                    <div class="g-recaptcha col-sm-5"
                                          th:attr="data-sitekey=${@captchaSettings.getSite()}"></div>
                                     <span id="captchaError" class="alert alert-danger col-sm-4"
                                           style="display:none"></span>
-                                    <div class="row">
+                                    <div class="warning-container"
+                                         th:if="${#fields.hasErrors('captchaResponse')}">
+                                        <i class="material-icon warning-container__icon">warning</i>
+                                        <div class="warning-container__text"
+                                             th:errors="*{captchaResponse}"></div>
+                                    </div>
+
+                                    <div class="row" style="margin-top: 10px">
                                         <div class="col-md-12">
-                                            <input type="submit" class="btn btn-success btn-send" value="Register">
+                                            <input type="submit" class="btn btn-success btn-send"
+                                                   data-sitekey="reCAPTCHA_site_key"
+                                                   data-callback='onSubmit'
+                                                   data-action='submit' value="Register"/>
                                             <p></p>
                                         </div>
                                     </div>

@@ -1050,7 +1050,7 @@ org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (
 2020-07-06 21:23:42.595  INFO mb1066 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 7 ms
 2020-07-06 21:29:43.793 ERROR mb1066 --- [nio-8080-exec-3] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
 java.lang.NullPointerException
-	at ch.bbw.pr.sospri.security.handler.CustomAccessDeniedHandler.handle(CustomAccessDeniedHandler.java:28)
+	at ch.bbw.pr.sospri.security.auth.handler.CustomAccessDeniedHandler.handle(CustomAccessDeniedHandler.java:28)
 	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:131)
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)

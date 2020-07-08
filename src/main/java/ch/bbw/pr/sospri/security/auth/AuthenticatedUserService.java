@@ -1,4 +1,4 @@
-package ch.bbw.pr.sospri.security;
+package ch.bbw.pr.sospri.security.auth;
 
 import ch.bbw.pr.sospri.domain.User;
 import ch.bbw.pr.sospri.repository.UserRepository;

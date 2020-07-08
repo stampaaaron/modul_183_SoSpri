@@ -1,4 +1,4 @@
-package ch.bbw.pr.sospri.security.handler;
+package ch.bbw.pr.sospri.security.auth.handler;
 
 import ch.bbw.pr.sospri.domain.User;
 import lombok.extern.log4j.Log4j2;
@@ -25,13 +25,16 @@ public class CustomAccessDeniedHandler implements AccessDeniedHandler {
 
     Authentication auth
         = SecurityContextHolder.getContext().getAuthentication();
-    Object user = auth.getPrincipal();
-    if (user instanceof User) {
-      log.warn("user with id = {} tried to access page {}", ((User) user).getId(), request.getRequestURL());
-    } else {
-      log.warn("a google user tried to access page {}", request.getRequestURL());
+    if (auth != null) {
+      Object user = auth.getPrincipal();
+      if (user instanceof User) {
+        log.warn("user with id = {} tried to access page {}", ((User) user).getId(), request.getRequestURL());
+      } else {
+        log.warn("a google user tried to access page {}", request.getRequestURL());
+      }
     }
 
     response.sendRedirect(request.getContextPath() + "/403.html");
+
   }
 }

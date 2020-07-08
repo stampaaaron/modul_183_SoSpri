@@ -1,7 +1,7 @@
 package ch.bbw.pr.sospri.controller.helper;
 
 import ch.bbw.pr.sospri.domain.User;
-import ch.bbw.pr.sospri.security.Role;
+import ch.bbw.pr.sospri.security.auth.Role;
 import ch.bbw.pr.sospri.service.UserService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;

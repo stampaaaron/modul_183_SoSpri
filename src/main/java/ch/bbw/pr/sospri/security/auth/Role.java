@@ -1,4 +1,4 @@
-package ch.bbw.pr.sospri.security;
+package ch.bbw.pr.sospri.security.auth;
 
 import lombok.NoArgsConstructor;
 

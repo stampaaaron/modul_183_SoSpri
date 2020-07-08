@@ -18,6 +18,6 @@ spring.h2.console.path: /h2-console/
 
 server.servlet.session.timeout: 30s
 
-google.recaptcha.key.site: 6LdTXa4ZAAAAAJ0HMJmj0EJMLObcxH23J5h03WQ6
-google.recaptcha.key.secret: 6LdTXa4ZAAAAALHmvqtAXgSJ5__B9nMQnX3KUIVC
+google.recaptcha.key.site: 6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI
+google.recaptcha.key.secret: 6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe
 

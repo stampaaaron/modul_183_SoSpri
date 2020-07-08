@@ -1,6 +1,6 @@
 package ch.bbw.pr.sospri.domain;
 
-import ch.bbw.pr.sospri.security.Role;
+import ch.bbw.pr.sospri.security.auth.Role;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

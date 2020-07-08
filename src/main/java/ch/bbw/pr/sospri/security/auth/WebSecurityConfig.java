@@ -1,9 +1,9 @@
-package ch.bbw.pr.sospri.security;
+package ch.bbw.pr.sospri.security.auth;
 
-import ch.bbw.pr.sospri.security.handler.CustomAccessDeniedHandler;
-import ch.bbw.pr.sospri.security.handler.LoginFailureHandler;
-import ch.bbw.pr.sospri.security.handler.LoginSuccessHandler;
-import ch.bbw.pr.sospri.security.handler.LogoutSuccessHandler;
+import ch.bbw.pr.sospri.security.auth.handler.CustomAccessDeniedHandler;
+import ch.bbw.pr.sospri.security.auth.handler.LoginFailureHandler;
+import ch.bbw.pr.sospri.security.auth.handler.LoginSuccessHandler;
+import ch.bbw.pr.sospri.security.auth.handler.LogoutSuccessHandler;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

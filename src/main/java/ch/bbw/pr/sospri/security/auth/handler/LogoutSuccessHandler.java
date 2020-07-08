@@ -1,4 +1,4 @@
-package ch.bbw.pr.sospri.security.handler;
+package ch.bbw.pr.sospri.security.auth.handler;
 
 import ch.bbw.pr.sospri.domain.User;
 import lombok.extern.log4j.Log4j2;

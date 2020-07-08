@@ -35,4 +35,6 @@ public class RegisterMember {
       message = "Password doesn't match the given criteria."
   )
   private String passwordConfirmation;
+
+  private String captchaResponse;
 }
